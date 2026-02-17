@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Form</legend>
+
+                <!-- Name -->
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Reason for Contact -->
+                <div>
+                    <label for="reason">Reason for Contact</label>
+                    <select id="reason" name="reason" required>
+                        <option value="" selected disabled>Please choose an option</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" maxlength="300" required></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
